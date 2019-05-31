@@ -24,6 +24,7 @@ public static class TextureGenerator{
         {
             for (int x = 0; x < width; x++)
             {
+                Debug.Log(heightMap[x, y]);
                 colorMap[y * width + x] = Color.Lerp(Color.black, Color.white, heightMap[x, y]);
             }
         }
